@@ -57,7 +57,7 @@
 
     <license
         file = 'LICENSE-CODE'
-    >LGPL-2.1-or-later</license>
+    >LGPL-3.0-or-later</license>
 
     <license
         file = 'LICENSE-ICON'
