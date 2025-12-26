@@ -10,6 +10,13 @@ Addon example that's easy to make your own.
 </div>
 
 <br/>
+<br/>
+
+>   [!IMPORTANT]  
+>   All files in this repository are examples for this fictional addon.  
+>   → The `CONTRIBUTING.md` file is for the addon, not this template!
+
+<br/>
 
 ## Details
 
