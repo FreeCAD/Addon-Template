@@ -5,7 +5,7 @@
 
 Addon example that's easy to make your own.
 
-<img width = '300' src = './Resources/Media/Header.webp' />
+<img width = '360' src = './Resources/Media/Header.webp' />
 
 </div>
 
