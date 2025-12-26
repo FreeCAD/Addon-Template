@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "editorconfig.editorconfig",
+        "theqtcompany.qt-ui",
+        "aaron-bond.better-comments",
+        "seanwu.vscode-qt-for-python",
+        "redhat.vscode-xml"
+    ]
+}
