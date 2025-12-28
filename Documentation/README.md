@@ -3,8 +3,8 @@
 
 ## Usage
 
--   [How do I do X?][Howto-X]
+-   [How do I do X?][Usage-X]
 
 
 
-[Usage-X]: ./Usage/Howto-X
+[Usage-X]: ./Usage/Howto-X.md
