@@ -19,9 +19,9 @@ Addon example that's easy to make your own.
 <br/>
 
 ## Information
-- [» How to use this addon template][Usage]
-- [» Details about the addon license][Licensing]
-- [» How this template is structured][Structure]
+» [How to use this addon template][Usage]  
+» [Details about the addon license][Licensing]  
+» [How this template is structured][Structure]
 
 [Structure]: https://github.com/FreeCAD/Addon-Template/wiki/Structure
 [Licensing]: https://github.com/FreeCAD/Addon-Template/wiki/Licensing
