@@ -2,4 +2,4 @@
 # SPDX-FileNotice: Part of the Minimal addon.
 
 
-print('freecad/Minimal/__init__.py')
+print('freecad/Minimal/init_gui.py')
