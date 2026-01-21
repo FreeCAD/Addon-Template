@@ -7,10 +7,10 @@ How to contribute to this addon.
 
 ## TLDR
 
--   Standard PR based workflow
+-   Standard PR based workflow.
 
 -   For new files add SPDX or  
-    license metadata for icons
+    license metadata for icons.
 
 -   Open an issue for larger stuff.
 
@@ -18,7 +18,7 @@ How to contribute to this addon.
 
 ## Setup
 
--   Fork & clone the repository
+-   Fork & clone the repository.
 
 -   Using [uv], install the dev dependencies:
 
