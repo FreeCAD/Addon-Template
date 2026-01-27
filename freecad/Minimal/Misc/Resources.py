@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: LGPL-3.0-or-later
-# SPDX-FileNotice: Part of the StandardBeams addon.
+# SPDX-FileNotice: Part of the Minimal addon.
 
 import freecad.Minimal as module
 from importlib import resources
