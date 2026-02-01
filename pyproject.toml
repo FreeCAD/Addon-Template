@@ -4,7 +4,7 @@
 version = '0.0.0'
 name = 'Addon'
 
-requires-python = '>=3.10'
+requires-python = '>=3.11'
 
 dependencies = [
     'freecad-stubs>=1.0.21' ,
