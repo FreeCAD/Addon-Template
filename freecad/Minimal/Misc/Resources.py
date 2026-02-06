@@ -2,10 +2,11 @@
 # SPDX-FileNotice: Part of the Minimal addon.
 
 import freecad.Minimal as module
-from importlib import resources
+from importlib.resources import as_file , files
 
+resources = files(module) / 'Resources'
 
-icons = resources.files(module) / 'Resources/Icons'
+icons = resources / 'Icons'
 
 
 def asIcon ( name : str ):
@@ -14,5 +15,5 @@ def asIcon ( name : str ):
 
     icon = icons / file
 
-    with resources.as_file(icon) as path:
+    with as_file(icon) as path:
         return str( path )
