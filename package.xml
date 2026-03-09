@@ -85,7 +85,7 @@
 
     <url
         type = 'readme'
-    >https://github.com/FreeCAD/Addon-Template/blob/Latest/Resources/Documents/Overview.md</url>
+    >https://raw.githubusercontent.com/FreeCAD/Addon-Template/refs/heads/Latest/Resources/Documents/Overview.md</url>
 
     <!--[ Content ]――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
