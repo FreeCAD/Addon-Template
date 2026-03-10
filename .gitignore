@@ -2,5 +2,5 @@
 # SPDX-FileNotice: Part of the Minimal addon.
 # SPDX-FileNotice: https://git-scm.com/docs/gitignore
 
-__pycache__/**
-.venv/**
+__pycache__
+.venv
