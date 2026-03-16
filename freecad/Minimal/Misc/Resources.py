@@ -4,6 +4,7 @@
 import freecad.Minimal as module
 from importlib.resources import as_file , files
 
+
 resources = files(module) / 'Resources'
 
 icons = resources / 'Icons'
