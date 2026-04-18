@@ -9,5 +9,5 @@ requires-python = '>=3.11'
 
 dependencies = [
     'freecad-stubs>=1.0.21' ,
-    'pyside6>=1.0.21'
+    'pyside6>=6.11.0'
 ]
