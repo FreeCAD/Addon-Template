@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- SPDX-License-Identifier: LGPL-3.0-or-later -->
+<!-- SPDX-License-Identifier: CC0-1.0 -->
 <!-- SPDX-FileNotice: Part of the Minimal addon. -->
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
 
@@ -37,8 +37,8 @@
 
     <!--[ Licenses ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
-    <license file="LICENSE-Code">LGPL-3.0-or-later</license>
-    <license file="LICENSE-Assets">CC-BY-SA-4.0</license>
+    <license file="LICENSE-Code">PUT YOUR LICENSE SPDX ID HERE</license>
+    <license file="LICENSE-Assets">PUT YOUR LICENSE SPDX ID HERE</license>
 
     <!--[ Icon ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
