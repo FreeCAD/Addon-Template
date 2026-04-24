@@ -2,19 +2,13 @@
 # SPDX-FileNotice: Part of the Minimal addon.
 
 import freecad.Minimal as module
-from importlib.resources import as_file , files
-
+from importlib.resources import as_file, files
 
 resources = files(module) / 'Resources'
-
 icons = resources / 'Icons'
 
 
-def asIcon ( name : str ):
-
-    file = name + '.svg'
-
-    icon = icons / file
-
+def as_icon(name: str) -> str:
+    icon = icons / (name + '.svg')
     with as_file(icon) as path:
-        return str( path )
+        return str(path)

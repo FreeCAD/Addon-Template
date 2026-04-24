@@ -1,13 +1,13 @@
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-License-Identifier: CC0-1.0 -->
 <!-- SPDX-FileNotice: Part of the Minimal addon. -->
 
-<div align = 'center' >
+<div align="center">
 
 # Minimal
 
 Addon example that's easy to make your own.
 
-<img width = '360' src = './Resources/Media/Header.webp' />
+<img width="360" src="./Resources/Media/Header.webp" />
 
 </div>
 
@@ -15,8 +15,8 @@ Addon example that's easy to make your own.
 <br/>
 
 >   [!IMPORTANT]  
->   All files in this repository are examples for this fictional addon.  
->   → The `CONTRIBUTING.md` file is for the addon, not this template!
+>   All files in this repository are examples for this fictional addon.
+>   → The contents of the template are released into the public domain. See `LICENSE-TEMPLATE` -- you should [choose your own license][Licensing] for your addon.
 
 <br/>
 

@@ -2,12 +2,14 @@
 # SPDX-FileNotice: Part of the Minimal addon.
 
 [project]
-version = '0.0.0' # No need to update
-name = 'Addon'    # these two properties.
+# Unused — FreeCAD addons are distributed via package.xml, not pip.
+version = "0.0.0"
+name = "Addon"
+requires-python = ">=3.11"
+dependencies = []
 
-requires-python = '>=3.11'
-
-dependencies = [
-    'freecad-stubs>=1.0.21' ,
-    'pyside6>=6.11.0'
+[project.optional-dependencies]
+dev = [
+    "freecad-stubs>=1.0.21",
+    "pyside6>=6.11.0",
 ]

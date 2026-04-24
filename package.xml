@@ -1,14 +1,7 @@
-<?xml
-    version = '1.0'
-    encoding = 'UTF-8'
-    standalone = 'no'
-?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- SPDX-License-Identifier: LGPL-3.0-or-later -->
 <!-- SPDX-FileNotice: Part of the Minimal addon. -->
-<package
-    format = '1'
-    xmlns = 'https://wiki.freecad.org/Package_Metadata'
->
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
 
     <!--[ Versions ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
@@ -19,19 +12,9 @@
 
     <!--[ Dependencies ]―――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
-    <depend
-        version_gte = '2.4.0'
-        type = 'python'
-    >numpy</depend>
-
-    <depend
-        version_gte = '0.6.70'
-        type = 'addon'
-    >Curves</depend>
-
-    <depend
-        type = 'internal'
-    >draft</depend>
+    <depend version_gte="2.4.0" type="python">numpy</depend>
+    <depend version_gte="0.6.70" type="addon">Curves</depend>
+    <depend type="internal">draft</depend>
 
     <!--[ Info ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
@@ -46,25 +29,16 @@
 
     <!--[ Maintainers ]――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
-    <maintainer
-        email = 'PhoneDroid.FGL@proton.me'
-    >PhoneDroid</maintainer>
+    <maintainer email="PhoneDroid.FGL@proton.me">PhoneDroid</maintainer>
 
     <!--[ Authors ]――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
-    <author
-        email = 'PhoneDroid.FGL@proton.me'
-    >PhoneDroid</author>
+    <author email="PhoneDroid.FGL@proton.me">PhoneDroid</author>
 
     <!--[ Licenses ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
-    <license
-        file = 'LICENSE-Code'
-    >LGPL-3.0-or-later</license>
-
-    <license
-        file = 'LICENSE-Assets'
-    >CC-BY-SA-4.0</license>
+    <license file="LICENSE-Code">LGPL-3.0-or-later</license>
+    <license file="LICENSE-Assets">CC-BY-SA-4.0</license>
 
     <!--[ Icon ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
@@ -72,22 +46,10 @@
 
     <!--[ Urls ]―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
-    <url
-        type = 'documentation'
-    >https://github.com/FreeCAD/Addon-Template/tree/Latest/Documentation</url>
-
-    <url
-        branch = 'Latest'
-        type = 'repository'
-    >https://github.com/FreeCAD/Addon-Template</url>
-
-    <url
-        type = 'bugtracker'
-    >https://github.com/FreeCAD/Addon-Template/issues</url>
-
-    <url
-        type = 'readme'
-    >https://raw.githubusercontent.com/FreeCAD/Addon-Template/refs/heads/Latest/Resources/Documents/Overview.md</url>
+    <url type="documentation">https://github.com/FreeCAD/Addon-Template/tree/main/Documentation</url>
+    <url branch="main" type="repository">https://github.com/FreeCAD/Addon-Template</url>
+    <url type="bugtracker">https://github.com/FreeCAD/Addon-Template/issues</url>
+    <url type="readme">https://raw.githubusercontent.com/FreeCAD/Addon-Template/refs/heads/main/Resources/Documents/Overview.md</url>
 
     <!--[ Content ]――――――――――――――――――――――――――――――――――――――――――――――――――――――――――-->
 
