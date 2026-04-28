@@ -2,7 +2,6 @@
 # SPDX-FileNotice: Part of the Minimal addon.
 
 [project]
-# Unused — FreeCAD addons are distributed via package.xml, not pip.
 version = "0.0.0"
 name = "Addon"
 requires-python = ">=3.11"
