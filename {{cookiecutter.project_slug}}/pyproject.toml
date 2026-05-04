@@ -1,0 +1,42 @@
+# References:
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+# https://packaging.python.org/en/latest/guides/packaging-namespace-packages/#native-namespace-packages
+# https://packaging.python.org/en/latest/guides/single-sourcing-package-version/
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "freecad-{{cookiecutter.addon_module_name}}"
+dynamic = ["version"]
+description = "{{cookiecutter.addon_description}}"
+readme = "README.md"
+license = "{{ cookiecutter.addon_license }}"
+license-files = [
+    "LICENSE-Code",
+    "LICENSE-Assets"
+]
+maintainers = [
+    {name = "{{cookiecutter.addon_maintainer_name}}", email = "{{cookiecutter.addon_maintainer_email}}"},
+]
+requires-python = ">=3.10"
+{% if cookiecutter.addon_dependencies %}dependencies = ["{{cookiecutter.addon_dependencies}}"]{% endif %}
+
+[dependency-groups]
+dev = [
+    "PySide6",
+    "ruff",
+    "codespell",
+]
+
+[project.urls]
+source = "{{cookiecutter.addon_repo_url}}"
+
+[tool.hatch.version]
+path = "freecad/{{cookiecutter.addon_module_name}}/version.py"
+# Hatchling looks for __version__ = "..." by default
+
+[tool.hatch.build.targets.wheel]
+packages = ["freecad"]

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+
+    <!-- For information about the contents of this file see
+    https://freecad.github.io/Addon-Academy/Topics/Structuring/Manifest/ -->
+
+    <!--[ Info ]-->
+
+    <name>{{ cookiecutter.addon_name }}</name>
+    <description>{{ cookiecutter.addon_description }}</description>
+    <version>{{ cookiecutter.addon_version }}</version>
+    <date>{% now 'utc', '%Y-%m-%d' %}</date>
+
+    <!--[ Ecosystem Requirements ]-->
+
+    <!--NOTE: Examples only, this Template does *not* actually require these versions -->
+    <freecadmin>1.1.1</freecadmin>
+    <pythonmin>3.10</pythonmin>
+
+    <!--[ Dependencies ]-->
+
+    <!--NOTE: Examples only, this Template does *not* actually require these -->
+    <!--
+    <depend type="python">numpy</depend>
+    <depend type="addon">Curves</depend>
+    <depend type="internal">draft</depend>
+    -->
+
+    <!--[ Tags ]-->
+    <!--
+    <tag>Template</tag>
+    <tag>Minimal</tag>
+    <tag>Example</tag>
+    -->
+
+    <!--[ Maintainers ]-->
+
+    <maintainer email="{{ cookiecutter.addon_maintainer_email }}">{{ cookiecutter.addon_maintainer_name }}</maintainer>
+
+    <!--[ Authors ]-->
+
+    <author>{{ cookiecutter.addon_maintainer_name }}</author>
+    <!-- <author>Yet another author's name here</author> -->
+
+    <!--[ Licenses ]-->
+
+    <license file="LICENSE-Code">{{ cookiecutter.addon_license }}</license>
+    <license file="LICENSE-Assets">{{ cookiecutter.assets_license }}</license>
+
+    <!--[ Icon ]-->
+
+    <icon>freecad/{{ cookiecutter.addon_module_name }}/resources/icons/{{ cookiecutter.__addon_icon_filename }}.svg</icon>
+
+    <!--[ Urls ]-->
+
+    <url type="repository" branch="{{ cookiecutter.addon_repo_branch }}">{{ cookiecutter.addon_repo_url }}</url>
+    <url type="documentation">{{ cookiecutter.addon_repo_url }}/tree/{{ cookiecutter.addon_repo_branch }}/freecad/{{ cookiecutter.addon_module_name }}/resources/docs/</url>
+    <url type="bugtracker">{{ cookiecutter.addon_repo_url }}/issues/</url>
+    <url type="readme">{{ cookiecutter.addon_repo_url }}/refs/heads/{{ cookiecutter.addon_repo_branch }}/freecad/{{ cookiecutter.addon_module_name }}/resources/docs/Overview.md</url>
+
+    <!--[ Content ]-->
+
+    <content>
+        <other/>
+    </content>
+
+</package>

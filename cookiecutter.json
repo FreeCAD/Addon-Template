@@ -1,0 +1,62 @@
+{
+  "addon_name": "MyAddon",
+  "project_slug": "{{ cookiecutter.addon_name | proj_dir }}",
+  "addon_module_name": "{{ cookiecutter.addon_name | module_name }}",
+  "addon_icon_svg": "addon.svg",
+  "addon_maintainer_name": "me",
+  "addon_maintainer_email": "me@foobar.com",
+  "addon_description": "{{cookiecutter.addon_name}} does something cool.",
+  "addon_dependencies": "",
+  "addon_version": "0.1.0",
+
+  "addon_license": [
+    "LGPL-2.1-or-later",
+    "LGPL-3.0-or-later",
+    "GPL-3.0-or-later",
+    "MIT",
+    "CC0",
+    "CC-BY-SA-4.0",
+    "OTHER"
+  ],
+
+  "assets_license": [
+    "CC-BY-SA-4.0",
+    "CC0",
+    "LGPL-2.1-or-later",
+    "LGPL-3.0-or-later",
+    "GPL-3.0-or-later",
+    "MIT",
+    "OTHER"
+  ],
+
+  "addon_repo_url": "https://github.com/me/{{ cookiecutter.project_slug }}",
+  "addon_repo_branch": "main",
+
+  "__addon_icon_filename": "{{ cookiecutter.addon_icon_svg | svg_filename }}",
+  "__year": "{% now 'utc', '%Y' %}",
+  "__license_file": "{{ cookiecutter.addon_license | lower}}.txt",
+  "__assets_license_file": "{{ cookiecutter.assets_license | lower}}.txt",
+
+  "_new_lines": "\n",
+  "_extensions": [
+    "local_extensions.svg_filename",
+    "local_extensions.proj_dir",
+    "local_extensions.module_name"
+  ],
+
+  "__prompts__": {
+    "addon_name": "Addon name",
+    "project_slug": "Project directory",
+    "addon_module_name": "Python sub-module name",
+    "addon_icon_svg": "Name of the svg icon file",
+    "addon_maintainer_name": "Name of the author/maintainer",
+    "addon_maintainer_email": "Email of the author/maintainer",
+    "addon_description": "Short description of the addon",
+    "addon_dependencies": "Required pypi dependencies (optional, separated by comma. i.e. numpy,pillow)",
+    "addon_version": "Initial version using format major.minor.review",
+
+    "addon_repo_url": "Full url of the git repository",
+    "addon_repo_branch": "Name of the default git branch"
+
+  }
+}
