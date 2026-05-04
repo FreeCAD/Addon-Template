@@ -22,7 +22,7 @@ More methods: https://docs.astral.sh/uv/getting-started/installation/
 Launch cookiecutter and point it at the template repo:
 
 ```shell
-uvx run cookiecutter https://github.com/FreeCAD/Addon-Template.git --checkout cookie
+uvx cookiecutter https://github.com/FreeCAD/Addon-Template.git --checkout cookie
 ```
 
 Answer the questions:
