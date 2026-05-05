@@ -2,6 +2,8 @@
 
 """Example FreeCAD command demonstrating the command structure."""
 
+from typing import ClassVar
+
 import FreeCAD as App
 from PySide.QtCore import QT_TRANSLATE_NOOP
 
@@ -10,6 +12,9 @@ from ..resources import Resources
 
 class ExampleCommand:
     """Example command that demonstrates the FreeCAD command structure."""
+
+    # Good practice (optional): set a constant for your command name, it is used in several places.
+    Name: ClassVar[str] = "{{ cookiecutter.addon_module_name }}_ExampleCommand"
 
     def __init__(self) -> None:
         # Optional: initialize instance variables that persist for the command's lifetime
@@ -26,11 +31,11 @@ class ExampleCommand:
                 "{{ cookiecutter.__addon_icon_filename }}.svg"
             ),
             "MenuText": QT_TRANSLATE_NOOP(
-                "{{ cookiecutter.addon_module_name }}_Example",
+                "{{ cookiecutter.addon_module_name }}",
                 "Example Command",
             ),
             "ToolTip": QT_TRANSLATE_NOOP(
-                "{{ cookiecutter.addon_module_name }}_Example",
+                "{{ cookiecutter.addon_module_name }}",
                 "Runs the example command",
             ),
         }
@@ -52,6 +57,4 @@ class ExampleCommand:
     def Install(cls) -> None:
         # Optional utility method to register the command
         if App.GuiUp:
-            App.Gui.addCommand(
-                "{{ cookiecutter.addon_module_name }}_ExampleCommand", cls()
-            )
+            App.Gui.addCommand(cls.Name, cls())

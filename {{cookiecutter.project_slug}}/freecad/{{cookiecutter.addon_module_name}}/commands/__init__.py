@@ -24,8 +24,8 @@ Example:
     class MyCommand:
         def GetResources(self):
             return {'Pixmap': 'MyCommand.svg',
-                    'MenuText': QT_TRANSLATE_NOOP("My_Command", "My Command"),
-                    'ToolTip': QT_TRANSLATE_NOOP("My_Command", "Description")}
+                    'MenuText': QT_TRANSLATE_NOOP("{{ cookiecutter.addon_name }}", "My Command"),
+                    'ToolTip': QT_TRANSLATE_NOOP("{{ cookiecutter.addon_name }}", "Description")}
 
         def Activated(self):
             print("Command activated")
@@ -49,4 +49,5 @@ Good practices:
     - Export command classes here it to make it explicit public
 """
 
-from .example_command import ExampleCommand
+from .example_command import ExampleCommand as ExampleCommand
+from .example_manipulator import WorkbenchManipulator as WorkbenchManipulator
