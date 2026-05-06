@@ -1,9 +1,8 @@
-<!-- SPDX-License-Identifier: CC0-1.0 -->
-<!-- SPDX-FileNotice: Part of the Minimal addon. -->
+<!-- SPDX-License-Identifier: {{ cookiecutter.addon_license }} -->
 
-# Minimal
+# {{ cookiecutter.addon_name }}
 
-Addon example that's easy to make your own.
+{{ cookiecutter.addon_description }}
 
 ## What
 

@@ -145,14 +145,3 @@ freecad -M <path to MyAddon>
 
 See instructions here:
 https://freecad.github.io/Addon-Academy/
-
-
-## Contributors
-
-This template summarizes work from previous templates created by:
-
-* @looooo
-* @ToddG
-* @PhoneDroid
-* @mnesarco
-

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: {{ cookiecutter.addon_license }}
+
 """
 Entry point for the addon (headless mode).
 

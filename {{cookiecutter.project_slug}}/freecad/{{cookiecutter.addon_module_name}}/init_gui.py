@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: {{ cookiecutter.addon_license }}
+
 """
 GUI entry point for the addon.
 

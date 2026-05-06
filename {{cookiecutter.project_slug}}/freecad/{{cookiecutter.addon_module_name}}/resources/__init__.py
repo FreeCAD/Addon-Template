@@ -1,5 +1,5 @@
 # SPDX-License: CC0-1.0
-# (c) 2026 Frank David Martínez Muñoz. <mnesarco at gmail.com>
+# Author: Frank David Martínez Muñoz. <mnesarco at gmail.com> 2026
 
 """
 Resource manager for the addon.
