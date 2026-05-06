@@ -2,7 +2,7 @@
   "addon_name": "MyAddon",
   "project_slug": "{{ cookiecutter.addon_name | proj_dir }}",
   "addon_module_name": "{{ cookiecutter.addon_name | module_name }}",
-  "addon_icon_svg": "addon.svg",
+  "addon_icon_svg": "{{ cookiecutter.addon_name | module_name }}.svg",
   "addon_maintainer_name": "me",
   "addon_maintainer_email": "me@foobar.com",
   "addon_description": "{{cookiecutter.addon_name}} does something cool.",
