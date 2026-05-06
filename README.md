@@ -102,13 +102,38 @@ MyAddon
 
 ### Install the addon
 
-The easiest way to install a newly created addon is to just symlink it into the `Mod` directory.
+The easiest way to install a newly created addon is to just symlink it into the `Mod` directory if your platform allows symlinks.
 
 ```bash
 # cd to the Mod directory of your FreeCAD installation
 cd <FreeCAD user's config directory>/Mod
 ln -s <path to the created addon> MyAddon
 ```
+
+The other option is to just copy your addon dir into `<FreeCAD user's config directory>/Mod`
+
+### Typical User `Mod` Locations
+
+| Platform | Typical Path |
+| :--- | :--- |
+| **Windows** | `%APPDATA%\FreeCAD\Mod\` <br> *(Full path: `C:\Users\<username>\AppData\Roaming\FreeCAD\Mod\`) * |
+| **Linux** | **v0.20+:** `~/.local/share/FreeCAD/Mod/` <br> **v0.19 & older:** `~/.FreeCAD/Mod/` |
+| **macOS** | `/Users/<username>/Library/Application Support/FreeCAD/Mod/` |
+
+
+### Important Platform-Specific Notes
+
+*   **Linux (Snap/Flatpak):** If you installed FreeCAD via a sandboxed package manager, the directory will be different:
+    *   **Snap:** `~/snap/freecad/common/Mod/`
+    *   **Flatpak:** `~/.var/app/org.freecad.FreeCAD/data/FreeCAD/Mod/`
+
+### Pro-Tip: Find it via the Python Console
+If you aren't sure where your specific installation is looking for files, you can find the exact path directly inside FreeCAD:
+1.  Open FreeCAD.
+2.  In the **Python Console** (View > Panels > Python Console), type the following and press Enter:
+    `App.getUserAppDataDir()`
+3.  The output will be the parent directory of your `Mod` folder.
+
 
 ### Testing the addon without installing it
 
