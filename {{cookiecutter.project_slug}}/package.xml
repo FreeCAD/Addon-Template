@@ -62,6 +62,16 @@
 
     <content>
         <other/>
+
+        <!-- Example stuff -->
+        <workbench>
+            <name>{{ cookiecutter.addon_name }}</name>
+            <classname>{{ cookiecutter.addon_name }}Workbench</classname>
+            <description>Example workbench</description>
+            <subdirectory>./</subdirectory>
+            <icon>freecad/{{ cookiecutter.addon_module_name }}/resources/icons/{{ cookiecutter.__addon_icon_filename }}-wb.svg</icon>
+        </workbench>
+
     </content>
 
 </package>
