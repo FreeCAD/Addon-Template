@@ -72,20 +72,22 @@ Voila, the addon has been created in a directory under the current directory:
 
 
 ```shell
-MyAddon
+MyAddon/
 ├── freecad
 │   └── MyAddon
 │       ├── commands
 │       │   ├── example_command.py
 │       │   ├── example_manipulator.py
 │       │   └── __init__.py
+│       ├── example_workbench.py
 │       ├── init_gui.py
 │       ├── __init__.py
 │       ├── resources
 │       │   ├── docs
 │       │   │   └── Overview.md
 │       │   ├── icons
-│       │   │   └── MyAddon.svg
+│       │   │   ├── MyAddon.svg
+│       │   │   └── MyAddon-wb.svg
 │       │   ├── __init__.py
 │       │   ├── translations
 │       │   │   ├── MyAddon_es-ES.ts
@@ -96,6 +98,7 @@ MyAddon
 ├── LICENSE-Assets
 ├── LICENSE-Code
 ├── package.xml
+├── pixi.toml
 ├── pyproject.toml
 └── README.md
 ```
