@@ -1,0 +1,16 @@
+[project]
+authors = ["{{cookiecutter.addon_maintainer_name}} <{{cookiecutter.addon_maintainer_email}}>"]
+channels = ["freecad/label/dev", "conda-forge"]
+description = "{{cookiecutter.addon_description}}"
+name = "freecad.{{cookiecutter.addon_module_name}}"
+platforms = ["osx-arm64", "linux-aarch64", "linux-64", "win-64", "osx-64"]
+version = "{{cookiecutter.addon_version}}"
+
+[pypi-dependencies]
+freecad-{{cookiecutter.addon_module_name}} = { path = ".", editable = true }
+
+[tasks]
+test = "python tests/tests.py"
+
+[dependencies]
+freecad = ">=1.0.0,<2"
