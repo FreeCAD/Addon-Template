@@ -15,7 +15,7 @@ from .example_command import ExampleCommand
 class WorkbenchManipulator:
     """Adds/Remove Commands to Gui"""
 
-    _instance: ClassVar[WorkbenchManipulator] | None = None
+    _instance: ClassVar[WorkbenchManipulator | None]  = None
 
     def modifyMenuBar(self) -> list[dict[str, str]]:
         """Add commands to menus."""
