@@ -46,6 +46,11 @@ class ExampleCommand:
         # Place the main logic of your command here.
         App.Console.PrintMessage("Example Command activated\n")
 
+        # Example: Create a custom DocumentObject
+        from ..features import MyCoolCube
+        doc = App.ActiveDocument or App.newDocument()
+        MyCoolCube.create("TheCube", doc)
+
     def IsActive(self) -> bool:
         # Called frequently by FreeCAD to determine if the command should be
         # enabled (True) or greyed out/disabled (False).

@@ -29,6 +29,7 @@ dev = [
     "PySide6",
     "ruff",
     "codespell",
+    "freecad-stubs",
 ]
 
 [project.urls]
