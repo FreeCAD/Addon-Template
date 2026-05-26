@@ -123,8 +123,8 @@ def fix_ts_locale(ts_file: Path) -> None:
 
 def update_locale(lupdate_path: str, locale: str | None = None) -> None:
     """Update translation files using lupdate."""
-    py_files = [str(p) for p in Path("../../").glob("*.py")]
-    ui_files = [str(p) for p in Path("../ui/").glob("*.ui")]
+    py_files = [str(p) for p in Path("../../").glob("**/*.py")]
+    ui_files = [str(p) for p in Path("../ui/").glob("**/*.ui")]
     files = py_files + ui_files
 
     if not files:

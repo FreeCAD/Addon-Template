@@ -5,7 +5,7 @@
 from typing import ClassVar
 
 import FreeCAD as App
-from PySide.QtCore import QT_TRANSLATE_NOOP
+translate = App.Qt.translate
 
 from ..resources import Resources
 
@@ -23,18 +23,18 @@ class ExampleCommand:
     def GetResources(self) -> dict[str, str]:
         # Returns a dictionary that defines how the command appears in the UI.
         # - Pixmap: path to the icon file (relative to FreeCAD's icon search paths or absolute path)
-        # - MenuText: text shown in menus (use QT_TRANSLATE_NOOP for translation support)
+        # - MenuText: text shown in menus (use translate for translation support)
         # - ToolTip: text shown when hovering over the button/menu item
         # - Accel: optional keyboard shortcut (e.g., "Ctrl+A")
         return {
             "Pixmap": Resources.icon(
                 "{{ cookiecutter.__addon_icon_filename }}.svg"
             ),
-            "MenuText": QT_TRANSLATE_NOOP(
+            "MenuText": translate(
                 "{{ cookiecutter.addon_module_name }}",
                 "Example Command",
             ),
-            "ToolTip": QT_TRANSLATE_NOOP(
+            "ToolTip": translate(
                 "{{ cookiecutter.addon_module_name }}",
                 "Runs the example command",
             ),

@@ -47,12 +47,13 @@ class Resources:
             raise RuntimeError(msg)
 
         if cls._gui_icons_added:
-            return
+            return False
 
         icons = str(cls._pkg / "icons")
         App.Console.PrintLog(f"Installing {__name__}: icons={icons}\n")
         App.Gui.addIconPath(icons)
         cls._gui_icons_added = True
+        return True
 
     @classmethod
     def gui_register_translations(cls) -> bool:
@@ -61,10 +62,11 @@ class Resources:
             raise RuntimeError(msg)
 
         if cls._gui_translations_added:
-            return
+            return False
 
         translations = str(cls._pkg / "translations")
         App.Console.PrintLog(f"Installing {cls.__qualname__}: translations={translations}\n")
         App.Gui.addLanguagePath(translations)
         App.Gui.updateLocale()
         cls._gui_translations_added = True
+        return True

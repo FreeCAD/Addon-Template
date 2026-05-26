@@ -8,7 +8,7 @@ toolbar buttons, menu items, or direct invocation via FreeCADGui.runCommand().
 
 Each command is a Python class that must implement:
     - GetResources(): Returns a dict with 'Pixmap' (icon path), 'MenuText',
-      'ToolTip', and optionally 'Accel' (keyboard shortcut). Use QT_TRANSLATE_NOOP
+      'ToolTip', and optionally 'Accel' (keyboard shortcut). Use translate
       for translatable strings.
     - Activated(): Called when the command is triggered (button press or shortcut).
     - IsActive(): Returns True if the command is available, False to grey it out.
@@ -24,8 +24,8 @@ Example:
     class MyCommand:
         def GetResources(self):
             return {'Pixmap': 'MyCommand.svg',
-                    'MenuText': QT_TRANSLATE_NOOP("{{ cookiecutter.addon_name }}", "My Command"),
-                    'ToolTip': QT_TRANSLATE_NOOP("{{ cookiecutter.addon_name }}", "Description")}
+                    'MenuText': translate("{{ cookiecutter.addon_name }}", "My Command"),
+                    'ToolTip': translate("{{ cookiecutter.addon_name }}", "Description")}
 
         def Activated(self):
             print("Command activated")

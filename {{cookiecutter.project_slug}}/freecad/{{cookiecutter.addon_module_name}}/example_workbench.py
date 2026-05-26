@@ -5,19 +5,19 @@
 import FreeCAD as App
 import FreeCADGui as Gui
 
-from PySide.QtCore import QT_TRANSLATE_NOOP
+translate = App.Qt.translate
 
 from .resources import Resources
 from .commands import ExampleCommand
 
 class {{ cookiecutter.addon_name }}Workbench(Gui.Workbench):
 
-    MenuText: str = QT_TRANSLATE_NOOP(
+    MenuText: str = translate(
             "{{ cookiecutter.addon_module_name }}",
             "Example Workbench",
         )
 
-    ToolTip: str = QT_TRANSLATE_NOOP(
+    ToolTip: str = translate(
             "{{ cookiecutter.addon_module_name }}",
             "Example Workbench tooltip",
         )
