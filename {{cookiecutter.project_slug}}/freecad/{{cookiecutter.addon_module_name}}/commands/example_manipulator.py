@@ -45,7 +45,6 @@ class WorkbenchManipulator:
     def uninstall(cls) -> None:
         """Remove the workbench manipulator to the live session"""
         if App.GuiUp and cls._instance is not None:
-            cls._instance = WorkbenchManipulator()
             App.Gui.removeWorkbenchManipulator(cls._instance)
             cls._instance = None
             with suppress(Exception):
