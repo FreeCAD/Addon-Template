@@ -16,11 +16,15 @@ Usage from init_gui.py:
 
 import importlib
 import importlib.resources
-from importlib.abc import Traversable
+
 from typing import ClassVar
 
 import FreeCAD as App  # type: ignore
 
+try:
+    from importlib.resources.abc import Traversable
+except ImportError:
+    from importlib.abc import Traversable
 
 class Resources:
     """Addon {{cookiecutter.addon_name}} resource manager"""
