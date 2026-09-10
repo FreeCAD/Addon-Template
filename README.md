@@ -37,16 +37,17 @@ uvx cookiecutter https://github.com/FreeCAD/Addon-Template.git --checkout cookie
 Answer the questions:
 
 ```shell
-  [1/13] Addon name (MyAddon):
-  [2/13] Project directory (MyAddon):
-  [3/13] Python sub-module name (MyAddon):
-  [4/13] Name of the svg icon file (addon.svg):
-  [5/13] Name of the author/maintainer (me):
-  [6/13] Email of the author/maintainer (me@foobar.com):
-  [7/13] Short description of the addon (MyAddon does something cool.):
-  [8/13] Required pypi dependencies (optional, separated by comma. i.e. numpy,pillow) ():
-  [9/13] Initial version using format major.minor.review (0.1.0):
-  [10/13] Select addon_license
+  [1/14] Addon name (MyAddon):
+  [2/14] Project directory (MyAddon):
+  [3/14] Python sub-module name (MyAddon):
+  [4/14] Name of the svg icon file (addon.svg):
+  [5/14] Name of the author/maintainer (me):
+  [6/14] Email of the author/maintainer (me@foobar.com):
+  [7/14] Short description of the addon (MyAddon does something cool.):
+  [8/14] Required pypi dependencies (optional, separated by comma. i.e. numpy,pillow) ():
+  [9/14] Initial version using format major.minor.review (0.1.0):
+  [10/14] Include example workbench [y/n] (y):
+  [11/14] Select addon_license
     1 - LGPL-2.1-or-later
     2 - LGPL-3.0-or-later
     3 - GPL-3.0-or-later
@@ -55,7 +56,7 @@ Answer the questions:
     6 - CC-BY-SA-4.0
     7 - OTHER
     Choose from [1/2/3/4/5/6/7] (1):
-  [11/13] Select assets_license
+  [12/14] Select assets_license
     1 - CC-BY-SA-4.0
     2 - CC0
     3 - LGPL-2.1-or-later
@@ -64,8 +65,8 @@ Answer the questions:
     6 - MIT
     7 - OTHER
     Choose from [1/2/3/4/5/6/7] (1):
-  [12/13] Full url of the git repository (https://github.com/me/MyAddon):
-  [13/13] Name of the default git branch (main):
+  [13/14] Full url of the git repository (https://github.com/me/MyAddon):
+  [14/14] Name of the default git branch (main):
 ```
 
 Voila, the addon has been created in a directory under the current directory:
@@ -102,6 +103,11 @@ MyAddon/
 ├── pyproject.toml
 └── README.md
 ```
+
+> [!NOTE]
+> `example_workbench.py` and the `MyAddon-wb.svg` workbench icon are only generated
+> when the "Include example workbench" question is answered `yes` (the default).
+> The example command and feature are always generated.
 
 ### Install the addon
 

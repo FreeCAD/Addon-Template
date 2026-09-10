@@ -8,6 +8,7 @@
   "addon_description": "{{cookiecutter.addon_name}} does something cool.",
   "addon_dependencies": "",
   "addon_version": "0.1.0",
+  "addon_example_workbench": true,
 
   "addon_license": [
     "LGPL-2.1-or-later",
@@ -54,6 +55,7 @@
     "addon_description": "Short description of the addon",
     "addon_dependencies": "Required pypi dependencies (optional, separated by comma. i.e. numpy,pillow)",
     "addon_version": "Initial version using format major.minor.review",
+    "addon_example_workbench": "Include example workbench",
 
     "addon_repo_url": "Full url of the git repository",
     "addon_repo_branch": "Name of the default git branch"

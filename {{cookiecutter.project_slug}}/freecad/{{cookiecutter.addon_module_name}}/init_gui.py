@@ -16,7 +16,7 @@ Keep this file fast - it runs on every FreeCAD GUI startup.
 
 from .resources import Resources
 from .commands import ExampleCommand, WorkbenchManipulator
-from .example_workbench import {{ cookiecutter.addon_name }}Workbench
+{% if cookiecutter.addon_example_workbench %}from .example_workbench import {{ cookiecutter.addon_name }}Workbench{% endif %}
 
 # Install icons (optional)
 Resources.gui_register_icons()
@@ -30,5 +30,7 @@ ExampleCommand.Install()
 # Add Commands to the Gui
 WorkbenchManipulator.install()
 
+{% if cookiecutter.addon_example_workbench %}
 # Example workbench
 {{ cookiecutter.addon_name }}Workbench.Install()
+{% endif %}

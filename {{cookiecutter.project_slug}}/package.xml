@@ -62,7 +62,7 @@
 
     <content>
         <other/>
-
+{% if cookiecutter.addon_example_workbench %}
         <!-- Example stuff -->
         <workbench>
             <name>{{ cookiecutter.addon_name }}</name>
@@ -71,7 +71,7 @@
             <subdirectory>./</subdirectory>
             <icon>freecad/{{ cookiecutter.addon_module_name }}/resources/icons/{{ cookiecutter.__addon_icon_filename }}-wb.svg</icon>
         </workbench>
-
+{% endif %}
     </content>
 
 </package>
