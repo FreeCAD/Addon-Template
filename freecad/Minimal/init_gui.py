@@ -6,4 +6,4 @@ from FreeCAD import Console, Gui, Qt
 
 translate = Qt.translate
 
-Console.PrintLog('freecad/Minimal/init_gui.py\n')
+Console.PrintLog("freecad/Minimal/init_gui.py\n")
