@@ -3,4 +3,4 @@
 
 from FreeCAD import Console
 
-Console.PrintLog('freecad/Minimal/__init__.py\n')
+Console.PrintLog("freecad/Minimal/__init__.py\n")
