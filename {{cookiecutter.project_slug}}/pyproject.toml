@@ -21,7 +21,7 @@ license-files = [
 maintainers = [
     {name = "{{cookiecutter.addon_maintainer_name}}", email = "{{cookiecutter.addon_maintainer_email}}"},
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 {% if cookiecutter.addon_dependencies %}dependencies = ["{{cookiecutter.addon_dependencies}}"]{% endif %}
 
 [dependency-groups]
