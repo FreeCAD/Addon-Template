@@ -34,6 +34,7 @@
   "addon_repo_branch": "main",
 
   "__addon_icon_filename": "{{ cookiecutter.addon_icon_svg | svg_filename }}",
+  "__example_workbench_icon": "{% if cookiecutter.addon_example_workbench %}{{cookiecutter.__addon_icon_filename}}-wb.svg{% endif %}",
   "__year": "{% now 'utc', '%Y' %}",
   "__license_file": "{{ cookiecutter.addon_license | lower}}.txt",
   "__assets_license_file": "{{ cookiecutter.assets_license | lower}}.txt",
